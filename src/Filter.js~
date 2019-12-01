@@ -1,0 +1,9 @@
+import React,{ Component } from 'react';
+
+export const Filter = () => {
+	return(
+		<div>
+			<input type="text" placeholder="Search.."/>
+		</div>
+	)
+}
