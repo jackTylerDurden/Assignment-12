@@ -49,16 +49,21 @@ class Products extends React.Component{
 	
 	render(){
 		return(
-			<div className="container-fluid">
-				<Filters onFilter={this.handleFilter}/>
+            <div>
+                <h1>My Inventory</h1><br/>
+                <div className="row">
+                    <Filters onFilter={this.handleFilter}/>
+                </div>
                 <br/>
-				<div className="row">
-					<ProductTable onDestroy={this.handleDestroy} filterText={this.state.filterText} products = {this.state.products}></ProductTable>
-				</div>
-				<div className="row">
-					<ProductForm onSave={this.handleSave}/>
-				</div>
-			</div>
+                <div className="row">
+                    <div className="col-md-4">
+                        <ProductTable onDestroy={this.handleDestroy} filterText={this.state.filterText} products = {this.state.products}></ProductTable>
+                    </div>
+                </div>
+                <div className="row">
+                    <ProductForm onSave={this.handleSave}/>
+                </div>
+            </div>
 		)
 	}
 }

@@ -17,7 +17,7 @@ class Filters extends Component{
 
 	render(){
 		return(
-			<div className="row">
+			<div className="col-md-4">
 				<input className="form-control filterText" type="text" name="filterText" onChange={this.handleChange} placeholder="Search..."/>
 			</div>	
 		)

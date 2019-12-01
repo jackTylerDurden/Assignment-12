@@ -34,8 +34,8 @@ class ProductForm extends Component{
 
 	render(){
 		return(
-			<div>
-				<h3> Enter a new product</h3>
+			<div className="col-md-2 col-xs-2">
+				<h3> Add a new product</h3>
 
 				<label htmlFor="name">Name:</label><br/>
 				<input className="form-control" value={this.state.product.name} type="text" name="name" onChange={this.handleChange}/><br/>
